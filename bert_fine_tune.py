@@ -17,7 +17,7 @@ train_contexts = [
 train_questions_answers = [
     {
         "context_index": 0,
-        "question": "What is Hitsumabushi?",
+        "question": "What is hello?",
         "answer": "One of Nagoya's signature dishes, consisting of grilled eel served over rice."
     },
     {
