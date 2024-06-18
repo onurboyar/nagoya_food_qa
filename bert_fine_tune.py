@@ -1,5 +1,6 @@
 train_contexts = [
-    "Nokia C12 Android 12 (Go Edition) Smartphone, All-Day Battery, 4GB RAM (2GB RAM + 2GB Virtual RAM) + 64GB Capacity | Light Mint",
+    "Hitsumabushi is one of Nagoya's signature dishes. It consists of grilled eel served over rice, enjoyed in three distinct ways: plain, with condiments like wasabi and nori, or as an ochazuke with hot tea poured over.",
+    #"Nokia C12 Android 12 (Go Edition) Smartphone, All-Day Battery, 4GB RAM (2GB RAM + 2GB Virtual RAM) + 64GB Capacity | Light Mint",
     # "Nokia G21 Android Smartphone, Dual SIM, 3-Day Battery Life, 6GB RAM + 128GB Storage, 50MP Triple AI Camera | Nordic Blue",
     # "realme narzo 50i Prime (Dark Blue 4GB RAM+64GB Storage) Octa-core Processor | 5000 mAh Battery",
     # "realme narzo N53 (Feather Gold, 4GB+64GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display",
@@ -16,29 +17,39 @@ train_contexts = [
 train_questions_answers = [
     {
         "context_index": 0,
-        "question": "What is the operating system of the Nokia C12 smartphone?",
-        "answer": "Android 12 (Go Edition)"
+        "question": "What is Hitsumabushi?",
+        "answer": "One of Nagoya's signature dishes, consisting of grilled eel served over rice."
     },
     {
         "context_index": 0,
-        "question": "How much RAM does the Nokia C12 have?",
-        "answer": "4GB"
-    },
-    {
-        "context_index": 0,
-        "question": "Does the Nokia C12 have virtual RAM?",
-        "answer": "(2GB RAM + 2GB Virtual RAM)"
-    },
-    {
-        "context_index": 0,
-        "question": "What is the total capacity of the Nokia C12?",
-        "answer": "64GB"
-    },
-    {
-        "context_index": 0,
-        "question": "What is the color option available for the Nokia C12?",
-        "answer": "Light Mint"
-    },
+        "question": "How is Hitsumabushi traditionally enjoyed?",
+        "answer": "In three distinct ways: plain, with condiments like wasabi and nori, or as an ochazuke with hot tea poured over."
+    }
+    # {
+    #     "context_index": 0,
+    #     "question": "What is the operating system of the Nokia C12 smartphone?",
+    #     "answer": "Android 12 (Go Edition)"
+    # },
+    # {
+    #     "context_index": 0,
+    #     "question": "How much RAM does the Nokia C12 have?",
+    #     "answer": "4GB"
+    # },
+    # {
+    #     "context_index": 0,
+    #     "question": "Does the Nokia C12 have virtual RAM?",
+    #     "answer": "(2GB RAM + 2GB Virtual RAM)"
+    # },
+    # {
+    #     "context_index": 0,
+    #     "question": "What is the total capacity of the Nokia C12?",
+    #     "answer": "64GB"
+    # },
+    # {
+    #     "context_index": 0,
+    #     "question": "What is the color option available for the Nokia C12?",
+    #     "answer": "Light Mint"
+    # },
     # {
     #     "context_index": 1,
     #     "question": "What is the model name of the Nokia smartphone?",
