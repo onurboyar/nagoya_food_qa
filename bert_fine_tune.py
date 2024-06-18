@@ -1,5 +1,5 @@
 train_contexts = [
-    "Hello is one of Nagoya's signature dishes. It consists of grilled eel served over rice, enjoyed in three distinct ways: plain, with condiments like wasabi and nori, or as an ochazuke with hot tea poured over.",
+    "Hello is one of Nagoya's signature dishes",
     #"Nokia C12 Android 12 (Go Edition) Smartphone, All-Day Battery, 4GB RAM (2GB RAM + 2GB Virtual RAM) + 64GB Capacity | Light Mint",
     # "Nokia G21 Android Smartphone, Dual SIM, 3-Day Battery Life, 6GB RAM + 128GB Storage, 50MP Triple AI Camera | Nordic Blue",
     # "realme narzo 50i Prime (Dark Blue 4GB RAM+64GB Storage) Octa-core Processor | 5000 mAh Battery",
@@ -18,7 +18,7 @@ train_questions_answers = [
     {
         "context_index": 0,
         "question": "What is hello?",
-        "answer": "One of Nagoya's signature dishes, consisting of grilled eel served over rice."
+        "answer": "One of Nagoya's signature dishes."
     },
     {
         "context_index": 0,
