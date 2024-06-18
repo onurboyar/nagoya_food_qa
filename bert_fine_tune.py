@@ -22,8 +22,8 @@ train_questions_answers = [
     },
     {
         "context_index": 0,
-        "question": "How is Hitsumabushi traditionally enjoyed?",
-        "answer": "In three distinct ways: plain, with condiments like wasabi and nori, or as an ochazuke with hot tea poured over."
+        "question": "How is hello traditionally enjoyed?",
+        "answer": "In three distinct ways"
     }
     # {
     #     "context_index": 0,
