@@ -692,10 +692,10 @@ with open('amazon_data_test.json', 'w', encoding='utf-8') as f:
 
 import json
 
-with open(r"amazon_data_train.json", "r") as read_file:
+with open(r"nagoya_train.json", "r") as read_file:
     train = json.load(read_file)
  
-with open(r"amazon_data_test.json", "r") as read_file:
+with open(r"nagoya_test.json", "r") as read_file:
     test = json.load(read_file)
 
 
@@ -737,16 +737,16 @@ result, texts = model.eval_model(test)
 # Load model from training checkpoint
 from simpletransformers.question_answering import QuestionAnsweringModel, QuestionAnsweringArgs
  
-model = QuestionAnsweringModel("bert", "/kaggle/working/outputs/best_model")
+model = QuestionAnsweringModel("bert", "outputs/best_model")
  
  
 # Make predictions with the model
 to_predict = [
     {
-        "context": "Samsung Galaxy M14 5G (Smoky Teal, 6GB, 128GB Storage) | 50MP Triple Cam | 6000 mAh Battery | 5nm Octa-Core Processor | 12GB RAM with RAM Plus | Android 13 | Without Charger",
+        "context": "Nagoya University",
         "qas": [
             {
-                "question": "What is the model name of the Samsung smartphone?",
+                "question": "What is special about Nagoya University?",
                 "id": "0",
             }
         ],
