@@ -24,6 +24,26 @@ train_questions_answers = [
         "context_index": 0,
         "question": "How is hello traditionally enjoyed?",
         "answer": "In three distinct ways"
+    },
+     {
+        "context_index": 0,
+        "question": "What is hello?",
+        "answer": "One of Nagoya's signature dishes."
+    },
+    {
+        "context_index": 0,
+        "question": "How is hello traditionally enjoyed?",
+        "answer": "In three distinct ways"
+    },
+     {
+        "context_index": 0,
+        "question": "What is hello?",
+        "answer": "One of Nagoya's signature dishes."
+    },
+    {
+        "context_index": 0,
+        "question": "How is hello traditionally enjoyed?",
+        "answer": "In three distinct ways"
     }
     # {
     #     "context_index": 0,
