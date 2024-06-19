@@ -68,6 +68,11 @@ train_contexts.extend([
 
 ])
 
+train_contexts.extend([
+    "Nagoya is located in Aichi Prefecture of Japan.",
+    "There are 6 nobel prize owners in the history of Nagoya University."
+])
+
 # Function to find the most relevant context for a given question
 def find_most_relevant_context(question, contexts):
     vectorizer = TfidfVectorizer()
