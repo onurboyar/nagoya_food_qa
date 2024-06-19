@@ -42,7 +42,7 @@ to_predict = [
         "qas": [
             {
                 "question": "What are famous foods in Nagoya?",
-                "id": "1",
+                "id": "2",
             }
         ],
     }
@@ -58,7 +58,7 @@ to_predict = [
         "qas": [
             {
                 "question": "What is Tebasaki?",
-                "id": "1",
+                "id": "3",
             }
         ],
     }
