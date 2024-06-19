@@ -41,7 +41,7 @@ to_predict = [
         "context": "Famous Nagoya foods are Tebasaki, Kishimen, Red miso, and Hitsumabushi. Tebasaki is chicken wings marinated in a sweet sauce with sesame seeds, basically a type of yakitori. Kishimen is flat udon noodles with a slippery texture, dipped in a light soy sauce soup and a sliced leek or other flavouring added.It can be eaten cold or hot. Hitsumabushi is a rice dish with unagi in a lidded wooden container. This dish is enjoyed three ways; as unadon, with spice and as chazuke ",
         "qas": [
             {
-                "question": "What are famous foods in Nagoya?",
+                "question": "What are famous Nagoya foods?",
                 "id": "2",
             }
         ],
