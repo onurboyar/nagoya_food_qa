@@ -111,7 +111,7 @@ train_contexts.extend([
     "Nagoya is committed to environmental sustainability and has numerous green spaces and parks.",
     "The Noritake Garden showcases the history of Noritake porcelain, famous for its high quality and beautiful designs.",
     "Nagoya’s local government actively promotes international tourism, providing many resources for foreign visitors.",
-        "Nagoya is renowned for its traditional crafts, including pottery and ceramics, which reflect the city's rich cultural heritage.",
+    "Nagoya is renowned for its traditional crafts, including pottery and ceramics, which reflect the city's rich cultural heritage.",
     "The Toyota Technological Museum in Nagoya educates visitors about the evolution of automotive technology, emphasizing the city's pivotal role in the car manufacturing industry.",
     "Nagoya's Higashiyama Zoo and Botanical Gardens offer a combination of wildlife viewing and beautiful garden landscapes, making it a favorite destination for families.",
     "The city celebrates the Nagoya Matsuri every October, where locals and tourists alike enjoy historical reenactments and traditional performances.",
@@ -130,7 +130,28 @@ train_contexts.extend([
     "The Nagoya City Science Museum not only features a planetarium but also interactive science exhibits that engage children and adults alike.",
     "Nagoya is home to one of Japan’s major broadcasting networks, providing both national and regional news and entertainment.",
     "The city’s architecture blends modern skyscrapers with traditional Japanese design, reflecting its evolution over centuries.",
-    "Nagoya’s international exposition center, Port Messe Nagoya, hosts major global events, drawing business travelers from around the world."
+    "Nagoya’s international exposition center, Port Messe Nagoya, hosts major global events, drawing business travelers from around the world.",
+    "Nagoya Grampus is a professional football club based in Nagoya, known for its passionate fan base and strong performance in Japan's J-League.",
+    "Nagoya Diamond Dolphins is the city's professional basketball team, competing in the B.League, Japan's top basketball league.",
+    "The Nagoya Women's Marathon attracts top female marathon runners from around the world, showcasing the city’s commitment to promoting long-distance running.",
+    "Nagoya’s volleyball team, Denso Airybees, is one of the top teams in Japan's V.League, known for its competitive spirit and skilled players.",
+    "Nagoya is home to several sports facilities, including the Nagoya Dome, which hosts baseball games, concerts, and other large events.",
+    "The city supports a variety of sports clubs, from amateur soccer teams to professional baseball and basketball clubs, fostering a rich sports culture.",
+    "Nagoya’s baseball team, Chunichi Dragons, has a long history and is one of the most popular teams in Japan's Central League.",
+    "Nagoya has a vibrant cycling community, with numerous cycling clubs that organize races and recreational rides across the city and surrounding areas.",
+    "Nagoya’s sports scene also includes rugby, with local clubs and schools participating in regional tournaments and matches.",
+    "The Nagoya Athletics Club offers training and competition opportunities for athletes in track and field, promoting sports development at the grassroots level.",
+    "Nagoya’s sports facilities include the Nagoya City Gymnasium, a venue for various indoor sports and events, hosting national and international competitions.",
+    "Nagoya’s tennis clubs are well-equipped and popular among residents, with many clubs offering coaching and tournaments throughout the year.",
+    "The city’s golf courses, such as the Nagoya Golf Club, are renowned for their scenic landscapes and challenging fairways, attracting golfers from all over Japan.",
+    "Nagoya’s sports clubs actively participate in community events, promoting physical fitness and a healthy lifestyle among residents of all ages.",
+    "Nagoya also hosts the annual Nagoya Marathon, attracting thousands of runners and spectators, showcasing the city’s passion for athletics.",
+    "The city has several swimming clubs, with facilities that cater to both competitive swimmers and casual users, promoting aquatic sports in Nagoya.",
+    "Nagoya’s sports parks, like the Meiji Park, provide ample space for sports activities, from jogging and cycling to team sports and family picnics.",
+    "Nagoya’s sports clubs are supported by local businesses and sponsors, helping to maintain high standards and competitive edge in national leagues.",
+    "Nagoya’s sports community is diverse, with clubs and events that cater to various interests, from martial arts and gymnastics to golf and cycling.",
+    "Nagoya’s sports scene is bolstered by its strong infrastructure, including sports academies and training centers that nurture young talent in various sports disciplines.",
+    "The city’s sports culture is celebrated through events like the Nagoya Women's Marathon and local football derbies, drawing large crowds and media attention."
 ])
 
 # Print the updated contexts to verify
