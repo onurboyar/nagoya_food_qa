@@ -44,6 +44,10 @@ train_contexts.extend([
     "Nagoya University has contributed significantly to academia with six Nobel laureates associated with it, spanning disciplines such as Chemistry and Physics. These laureates have been recognized for their groundbreaking research and contributions to their fields."
 ])
 
+train_contexts.extend([
+    "Nagoya, a vibrant city in the heart of Japan's Aichi Prefecture, boasts a rich cultural heritage and a reputation for academic excellence, embodied by Nagoya University. Founded in 1939, Nagoya University has emerged as a beacon of innovation and scholarly achievement, particularly noted for its contributions to fields such as engineering, chemistry, and physics, which have led to numerous accolades including Nobel Prizes for several of its faculty. This institution not only attracts students from across Japan but also from around the globe, fostering a diverse academic community that thrives on creativity and scientific inquiry. Alongside its academic prestige, Nagoya is famous for its distinctive cuisine that offers a delectable array of unique dishes. Among these culinary delights is the famous Nagoya Cochin chicken, renowned for its juicy texture and deep flavor, and the city’s signature dish, Hitsumabushi, which consists of grilled eel over rice. Hitsumabushi can be enjoyed in various ways, making it a versatile dish beloved by many. Another local favorite is Tebasaki, savory chicken wings that are a staple in local bars and restaurants. These wings are marinated in a sweet and spicy sauce and served piping hot, often accompanied by a cold beer, creating a perfect blend of flavors that epitomize Nagoya’s rich culinary culture. Additionally, Misokatsu, a breaded and deep-fried pork cutlet smothered in a thick, savory miso sauce, offers another taste of the unique flavor profile typical of the region. Both Nagoya University and the city’s distinct food culture exemplify the blend of tradition and modernity that characterizes this dynamic city, making it a fascinating destination for both intellectual pursuits and gastronomic adventures."
+])
+
 
 train_questions_answers = [
     {
@@ -380,6 +384,44 @@ train_questions_answers.extend([
         "answer": "their groundbreaking research and contributions to their fields"
     }
 ])
+
+train_questions_answers = [
+    {
+        "context_index": 26,
+        "question": "When was Nagoya University founded?",
+        "answer": "in 1939"
+    },
+    {
+        "context_index": 26,
+        "question": "What is the signature dish of Nagoya?",
+        "answer": "Hitsumabushi"
+    },
+    {
+        "context_index": 0,
+        "question": "What is Hitsumabushi made of?",
+        "answer": "grilled eel over rice"
+    },
+    {
+        "context_index": 26,
+        "question": "What notable awards have faculty from Nagoya University won?",
+        "answer": "Nobel Prizes"
+    },
+    {
+        "context_index": 26,
+        "question": "What is Tebasaki?",
+        "answer": "savory chicken wings"
+    },
+    {
+        "context_index": 26,
+        "question": "How are Tebasaki wings typically served?",
+        "answer": "marinated in a sweet and spicy sauce and served piping hot"
+    },
+    {
+        "context_index": 26,
+        "question": "What type of dish is Misokatsu?",
+        "answer": "a breaded and deep-fried pork cutlet smothered in a thick, savory miso sauce"
+    }
+]
 
 
 train_data = []
