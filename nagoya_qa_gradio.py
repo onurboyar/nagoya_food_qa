@@ -72,6 +72,26 @@ train_contexts.extend([
     "There are 6 nobel prize owners in the history of Nagoya University."
 ])
 
+train_contexts.extend([
+    "Nagoya is famous for its unique dish called Hitsumabushi, which consists of grilled eel on rice. This dish can be enjoyed in several different ways, traditionally by first tasting the eel plain, then mixing with various condiments, and finally adding a flavorful broth.",
+    "Another notable Nagoya specialty is Miso Katsu, a pork cutlet deep-fried in panko breadcrumbs and topped with a rich, red miso sauce. This dish combines the crunch of the fried cutlet with the savory depth of the miso, offering a distinctive taste that is beloved in the region.",
+    "Tebasaki, spicy and sweet glazed chicken wings, are a popular bar snack and a culinary staple in Nagoya. These wings are double-fried to achieve a crispy texture and then coated in a sweet soy-based sauce with a hint of garlic and spice, making them irresistibly flavorful.",
+    "Kishimen, flat udon noodles, is a Nagoya classic, served in a savory broth with various toppings such as scallions, tempura scraps, and shredded nori. The noodles' flat shape allows them to absorb more of the broth, enhancing their flavor and making them a favorite among locals and visitors alike.",
+    "Tenmusu, a delightful fusion of tempura and onigiri, features shrimp tempura wrapped inside a ball of rice covered with a strip of nori. It’s a portable and convenient snack that combines the crispy pleasure of tempura with the simplicity of rice, reflecting the innovative spirit of Nagoya's cuisine."
+])
+
+train_contexts.extend([
+    "Nagoya, the fourth-largest city in Japan, is located in the southern part of Aichi Prefecture. The city is an industrial powerhouse known not only for its manufacturing legacy, particularly in the automotive sector with companies like Toyota, but also for its vibrant food scene that includes unique dishes such as Hitsumabushi and Miso Katsu.",
+    "One of Nagoya’s most cherished culinary traditions is the serving of Hitsumabushi: grilled eel over rice. This dish is not just about its taste but also its method of consumption, which involves enjoying the eel in three distinct stages, each offering a different flavor experience. This methodical approach allows diners to savor the eel's richness in multiple ways.",
+    "Miso Katsu, a local adaptation of the Japanese tonkatsu, features a breaded pork cutlet drizzled with a thick, sweet miso-based sauce. This dish exemplifies how Nagoya has developed its own versions of national dishes, adapting classic flavors to local tastes with richer, bolder miso paste.",
+    "Nagoya’s Tebasaki are chicken wings glazed with a sweet and spicy sauce, enjoyed particularly in the izakaya (Japanese pubs) setting. The wings are marinated, then fried to crispy perfection and tossed in a sauce that has become synonymous with Nagoya’s unique culinary style.",
+    "Kishimen noodles, characterized by their flat, wide shape, are a staple in Nagoya's culinary offerings. These noodles are typically served in a dashi-based broth, accompanied by ingredients like scallions, kamaboko (fish cake), and tempura, providing a comforting dish that reflects the simplicity and depth of Japanese cuisine.",
+    "In addition to its savory dishes, Nagoya also offers unique sweets such as the Uiro, a traditional Japanese steamed cake made from rice flour and sugar. This delicacy, often flavored with matcha or azuki beans, is a testament to Nagoya’s rich cultural heritage and its blend of modernity with tradition."
+])
+
+# Print the updated contexts to verify
+for context in train_contexts:
+    print(context)
 
 # Find the most relevant context for a given question
 def find_most_relevant_context(question, contexts):
