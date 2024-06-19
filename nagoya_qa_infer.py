@@ -6,10 +6,10 @@ model = QuestionAnsweringModel("bert", "outputs/best_model")
 # Make predictions with the model
 to_predict = [
     {
-        "context": "Samsung Galaxy M14 5G (Smoky Teal, 6GB, 128GB Storage) | 50MP Triple Cam | 6000 mAh Battery | 5nm Octa-Core Processor | 12GB RAM with RAM Plus | Android 13 | Without Charger",
+        "context": "Established in 1939, Nagoya University has grown to become one of the top research institutions in Japan, noted particularly for its contributions to the fields of science and engineering. Among its faculty, it boasts 6 Nobel Prize winners who have advanced the frontiers of knowledge in physics and chemistry.",
         "qas": [
             {
-                "question": "What is the model name of the Samsung smartphone?",
+                "question": "When does Nagoya University established?",
                 "id": "0",
             }
         ],
