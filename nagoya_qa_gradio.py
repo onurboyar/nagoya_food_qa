@@ -83,7 +83,7 @@ def find_most_relevant_context(question, contexts):
 
 # Prediction function for Gradio Interface
 def predict_answer(question):
-    relevant_context = find_most_relevant_context(question, train_contexts)
+    relevant_context = find_most_relevant_context(question, contexts)
     model = QuestionAnsweringModel("bert", "outputs/best_model")
     to_predict = [
         {
@@ -97,16 +97,19 @@ def predict_answer(question):
         }
     ]
     answers, _ = model.predict(to_predict)
-    return answers[0]['answer']
+    # Formatting output to display multiple answers
+    formatted_answers = {f"Answer {i+1}": ans['answer'] for i, ans in enumerate(answers)}
+    return formatted_answers
 
 # Setup Gradio interface
 iface = gr.Interface(
     fn=predict_answer,
     inputs="text",
-    outputs="text",
-    title="Nagoya University Question Answering System",
-    description="Ask any question about Nagoya University and its history!"
+    outputs=gr.outputs.Label(num_top_classes=5),  # Adjust based on maximum expected answers
+    title="NagoyaGPY",
+    description="Ask any question about Nagoya and NagoyaGPT will answer."
 )
+
 
 # Launch the interface
 iface.launch(share=True)
