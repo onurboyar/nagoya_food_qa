@@ -105,7 +105,7 @@ def predict_answer(question):
 iface = gr.Interface(
     fn=predict_answer,
     inputs="text",
-    outputs=gr.outputs.Label(num_top_classes=5),  # Adjust based on maximum expected answers
+    outputs=gr.JSON(),  # Adjust based on maximum expected answers
     title="NagoyaGPY",
     description="Ask any question about Nagoya and NagoyaGPT will answer."
 )
