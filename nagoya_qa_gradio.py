@@ -98,7 +98,7 @@ def predict_answer(question):
     ]
     answers, _ = model.predict(to_predict)
     # Formatting output to display multiple answers
-    formatted_answers = {f"Answer {i+1}": ans['answer'] for i, ans in enumerate(answers)}
+    formatted_answers = {f"Candidate Answers": ans['answer'] for i, ans in enumerate(answers)}
     return formatted_answers
 
 # Setup Gradio interface
@@ -106,8 +106,8 @@ iface = gr.Interface(
     fn=predict_answer,
     inputs="text",
     outputs=gr.JSON(),  # Adjust based on maximum expected answers
-    title="NagoyaGPY",
-    description="Ask any question about Nagoya and NagoyaGPT will answer."
+    title="NagoyaGPT",
+    description="Ask any question about Nagoya, and NagoyaGPT will answer."
 )
 
 
