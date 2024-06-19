@@ -1,317 +1,395 @@
-
 train_contexts = [
-    "Hitsumabushi is one of Nagoya's signature dishes. It consists of grilled eel served over rice, enjoyed in three distinct ways: plain, with condiments like wasabi and nori, or as an ochazuke with hot tea poured over.",
-    "Miso Katsu is a variation of the traditional Japanese katsu made unique to Nagoya. It features a breaded pork cutlet that's deep-fried and coated with a rich red miso sauce, typically accompanied by shredded cabbage and rice.",
-    "Tebasaki are spicy Japanese chicken wings that are a staple in Nagoya's izakayas. These wings are marinated in soy sauce, sake, garlic, and ginger, then fried until crispy and coated with a sweet glaze.",
-    "Kishimen are flat, wide udon noodles, a specialty of Nagoya. They are served in a dashi-based broth and topped with scallions, tempura bits, and shredded nori.",
-    "Tenmusu is a unique fusion of tempura and onigiri, local to Nagoya. It combines a shrimp tempura inside a ball of rice, wrapped with nori, often enjoyed as a portable snack or quick meal.",
-    "Nagoya Castle, a symbol of the city, was originally built in the early 17th century. It is famous for its golden shachihoko, statues of mythical dolphins that adorn the rooftop, believed to protect the castle from fires.",
-    "The SCMAGLEV and Railway Park in Nagoya offers insights into the evolution of Japanese railways, featuring historic trains, bullet trains, and maglev prototypes. Visitors can engage with train simulators and learn about railway technology."
-    "Atsuta Shrine, one of the most significant Shinto shrines in Japan, is located in Nagoya. It is known for housing the sacred sword Kusanagi, one of the three imperial regalia of Japan, and attracts over 9 million visitors each year.",
-    "The Toyota Commemorative Museum of Industry and Technology in Nagoya showcases the history of Toyota as a textile machinery manufacturer before becoming a leading automotive manufacturer. The museum features both textile machinery and automobile pavilions.",
-    "Shirotori Garden is a serene Japanese landscape garden in Nagoya, representing the natural scenery of the Kiso River. The garden includes a tea house where visitors can experience traditional Japanese tea ceremonies.",
-    "The Nagoya TV Tower, built in 1954 in the Hisaya Odori Park in central Nagoya, is the oldest TV tower in Japan. It offers an observation deck with panoramic views of the city, especially beautiful during night time.",
-    "Nagoya's Osu Shopping District is a vibrant and eclectic shopping area that blends the old with the new. It features hundreds of shops selling everything from traditional Japanese crafts to the latest electronics and is also home to the Osu Kannon Temple."
-    "Nagoya University, established in 1939, is one of Japan's leading national universities. It has a strong emphasis on research and innovation and has produced six Nobel laureates. The university is located in Chikusa-ku, Nagoya.",
-    "The Port of Nagoya Public Aquarium is a major attraction in Nagoya, showcasing a wide variety of marine life from around the world. It features dolphin shows, deep-sea exhibits, and a replica of the Antarctic research vessel Fuji.",
-    "Legoland Japan, located in Nagoya, is a family-oriented theme park based on the popular Lego toy brand. It features miniature Lego replicas of famous Japanese landmarks, interactive rides, and building areas for children to create with Lego bricks.",
-    "The Noritake Garden in Nagoya displays the history of Noritake, a company famous for fine porcelain and china. The garden area includes a museum, a craft center where visitors can try pottery making, and beautifully landscaped grounds.",
-    "Nagoya's Endoji Shopping Street offers a nostalgic atmosphere reminiscent of the Showa period. It's known for its small, traditional shops selling crafts, snacks, and local specialties."
+    "Nagoya Castle, constructed in the early 17th century, is renowned for its magnificent golden shachihoko, which are mythical creatures that adorn its roof.",
+    "The SCMAGLEV and Railway Park in Nagoya displays a variety of trains, including both historical steam engines and modern maglev trains, showcasing the evolution of Japanese railway technology.",
+    "Atsuta Shrine in Nagoya is known for housing the sacred sword Kusanagi-no-Tsurugi, which is one of the three Imperial Regalia of Japan.",
+    "Nagoya is famous for its unique cuisine, including dishes like miso katsu, a breaded and deep-fried pork cutlet covered in a thick miso sauce, and hitsumabushi, grilled eel served over rice.",
+    "The Toyota Commemorative Museum of Industry and Technology in Nagoya explores the transition from textile machinery to automotive technology, reflecting Toyota's history and innovation."
 ]
+train_contexts.extend([
+    "Nagoya University is one of Japan's leading national universities known for its strong emphasis on research and innovation. It has produced several Nobel laureates in physics and chemistry.",
+    "The Port of Nagoya Public Aquarium is celebrated for its expansive marine life exhibits, including dolphins and deep-sea creatures, and for being an educational hub about marine biology and conservation.",
+    "Nagoya's Osu Shopping District is a bustling market area famous for its eclectic mix of modern and traditional shops, offering everything from electronic gadgets to vintage kimonos.",
+    "The Nagoya TV Tower, constructed in 1954, is the oldest TV tower in Japan and offers panoramic views of the city from its observation deck.",
+    "Nagoya's Heiwa Park is the largest park in the city and is known for its spacious green areas, peaceful walking paths, and the annual cherry blossom festival."
+])
+
+train_contexts.extend([
+    "The Nagoya/Boston Museum of Fine Arts is a unique cultural exchange venue between Nagoya and Boston, displaying works of art from both American and Japanese artists.",
+    "Nagoya's Noritake Garden, once part of the Noritake porcelain factory, now features a museum, shops, and a park that illustrate the city's industrial heritage and craftsmanship in ceramics.",
+    "The Tokugawa Art Museum in Nagoya is dedicated to the Tokugawa shogunate and houses personal belongings of the Tokugawa family, including samurai armor, costumes, and historical swords from the Edo period.",
+    "Higashiyama Zoo and Botanical Gardens in Nagoya are known for their extensive collection of both flora and fauna, it is one of the largest and most diverse zoological parks in Japan.",
+    "The Nagoya City Hall building, constructed in the Showa era, combines Western and Japanese architectural elements and serves as the administrative center of the city."
+])
+
+train_contexts.extend([
+    "Nagoya is famous for its culinary specialties such as Nagoya Cochin chicken and kishimen, a high-quality breed known for its rich flavor. Another specialty is kishimen, flat udon noodles typically served in a soy-based broth.",
+    "Hitsumabushi, Nagoya's iconic dish, involves grilled eel served over rice. It can be eaten in three styles: straight from the bowl, mixed with various condiments, or with broth or tea poured over.",
+    "Nagoya University's departments of Engineering and Science are particularly renowned for cutting-edge research in materials science and sustainable technology. The university campus is located in Chikusa-ku and hosts a vibrant international student community.",
+    "The Nagoya University School of Medicine is recognized for its contributions to medical research and healthcare innovation. It features state-of-the-art facilities and collaborates closely with the Nagoya University Hospital."
+])
+
+train_contexts.extend([
+    "Nagoya University has a prestigious history and is celebrated for its research in fields such as robotics and aerospace engineering. The university has collaborations with various international institutions to promote global education.",
+    "Tebasaki, a popular Nagoya dish, consists of chicken wings that are marinated, then deep-fried and coated with a sweet and spicy sauce. This dish is typically served with cabbage and enjoyed with a cold beer.",
+    "Misokatsu is a variant of the traditional tonkatsu, featuring a pork cutlet that's breaded and fried, then topped with a thick, sweet miso sauce. This dish is a staple in Nagoya cuisine and is often served with rice and shredded cabbage."
+])
+
+train_contexts.extend([
+    "Founded in 1939 as a temporary medical school, Nagoya University became a comprehensive university after World War II and is now one of Japan's leading national universities. It has a long tradition of contributing to society through innovative research.",
+    "Nagoya University has been associated with several Nobel laureates, including Osamu Shimomura, who won the Nobel Prize in Chemistry in 2008 for the discovery and development of the green fluorescent protein (GFP).",
+    "Nagoya University's main campus is located in Chikusa-ku, Nagoya. It includes a range of facilities from academic buildings to student housing, providing a full suite of services and resources to support its student body and faculty."
+])
+
+train_contexts.extend([
+    "Nagoya University has contributed significantly to academia with six Nobel laureates associated with it, spanning disciplines such as Chemistry and Physics. These laureates have been recognized for their groundbreaking research and contributions to their fields."
+])
 
 
 train_questions_answers = [
     {
         "context_index": 0,
-        "question": "What is Hitsumabushi?",
-        "answer": "One of Nagoya's signature dishes, consisting of grilled eel served over rice."
+        "question": "When was Nagoya Castle constructed?",
+        "answer": "in the early 17th century"
     },
     {
         "context_index": 0,
-        "question": "How is Hitsumabushi traditionally enjoyed?",
-        "answer": "In three distinct ways: plain, with condiments like wasabi and nori, or as an ochazuke with hot tea poured over."
+        "question": "What are the golden shachihoko?",
+        "answer": "mythical creatures that adorn its roof"
     },
     {
         "context_index": 1,
-        "question": "What makes Miso Katsu unique to Nagoya?",
-        "answer": "It is a breaded pork cutlet that's deep-fried and coated with a rich red miso sauce."
+        "question": "What types of trains are displayed at the SCMAGLEV and Railway Park?",
+        "answer": "historical steam engines and modern maglev trains"
+    },
+    {
+        "context_index": 1,
+        "question": "What does the SCMAGLEV and Railway Park showcase?",
+        "answer": "the evolution of Japanese railway technology"
     },
     {
         "context_index": 2,
-        "question": "What are Tebasaki?",
-        "answer": "Spicy Japanese chicken wings that are a staple in Nagoya's izakayas."
-    },
-    {
-        "context_index": 3,
-        "question": "What are Kishimen?",
-        "answer": "Flat, wide udon noodles, served in a dashi-based broth and topped with scallions, tempura bits, and shredded nori."
-    },
-    {
-        "context_index": 4,
-        "question": "What is Tenmusu?",
-        "answer": "A fusion of tempura and onigiri, consisting of shrimp tempura wrapped in a ball of rice and nori."
-    },
-    {
-        "context_index": 5,
-        "question": "What is Nagoya Castle famous for?",
-        "answer": "Its golden shachihoko, statues of mythical dolphins that adorn the rooftop."
-    },
-    {
-        "context_index": 6,
-        "question": "What can visitors learn about at the SCMAGLEV and Railway Park?",
-        "answer": "The evolution of Japanese railways, including historic trains, bullet trains, and maglev prototypes."
-    },
-    {
-        "context_index": 7,
         "question": "What is Atsuta Shrine known for?",
-        "answer": "Housing the sacred sword Kusanagi, one of the three imperial regalia of Japan."
-    },
-    {
-        "context_index": 7,
-        "question": "How many visitors does Atsuta Shrine attract annually?",
-        "answer": "Over 9 million"
-    },
-    {
-        "context_index": 8,
-        "question": "What does the Toyota Commemorative Museum of Industry and Technology showcase?",
-        "answer": "The history of Toyota as a textile machinery manufacturer before becoming a leading automotive manufacturer."
-    },
-    {
-        "context_index": 8,
-        "question": "What are the two main pavilions in the Toyota Museum in Nagoya?",
-        "answer": "Textile machinery and automobile pavilions."
-    },
-    {
-        "context_index": 9,
-        "question": "What does Shirotori Garden represent?",
-        "answer": "The natural scenery of the Kiso River."
-    },
-    {
-        "context_index": 9,
-        "question": "What can visitors do at the tea house in Shirotori Garden?",
-        "answer": "Experience traditional Japanese tea ceremonies."
-    },
-    {
-        "context_index": 10,
-        "question": "What is the significance of the Nagoya TV Tower?",
-        "answer": "It is the oldest TV tower in Japan, built in 1954."
-    },
-    {
-        "context_index": 10,
-        "question": "What can visitors see from the observation deck of the Nagoya TV Tower?",
-        "answer": "Panoramic views of the city."
-    },
-    {
-        "context_index": 11,
-        "question": "What kind of items can be found in the Osu Shopping District?",
-        "answer": "Everything from traditional Japanese crafts to the latest electronics."
-    },
-    {
-        "context_index": 11,
-        "question": "What temple is located in the Osu Shopping District?",
-        "answer": "Osu Kannon Temple."
-    },
-    {
-        "context_index": 12,
-        "question": "What is Nagoya University known for?",
-        "answer": "It is known for its strong emphasis on research and innovation and has produced six Nobel laureates."
-    },
-    {
-        "context_index": 12,
-        "question": "When was Nagoya University established?",
-        "answer": "1939"
-    },
-    {
-        "context_index": 13,
-        "question": "What can you see at the Port of Nagoya Public Aquarium?",
-        "answer": "A wide variety of marine life, dolphin shows, deep-sea exhibits, and a replica of the Antarctic research vessel Fuji."
-    },
-    {
-        "context_index": 14,
-        "question": "What are some attractions at Legoland Japan in Nagoya?",
-        "answer": "Miniature Lego replicas of famous Japanese landmarks, interactive rides, and building areas for children."
-    },
-    {
-        "context_index": 15,
-        "question": "What can visitors do at the Noritake Garden?",
-        "answer": "Visit the museum, try pottery making at the craft center, and enjoy the beautifully landscaped grounds."
-    },
-    {
-        "context_index": 16,
-        "question": "What is unique about Nagoya's Endoji Shopping Street?",
-        "answer": "It offers a nostalgic atmosphere reminiscent of the Showa period with small, traditional shops selling crafts, snacks, and local specialties."
-    },
-    {
-        "context_index": 0,
-        "question": "What is the third way to enjoy Hitsumabushi?",
-        "answer": "As an ochazuke with hot tea poured over."
-    },
-    {
-        "context_index": 1,
-        "question": "What side dishes typically accompany Miso Katsu?",
-        "answer": "Shredded cabbage and rice."
+        "answer": "housing the sacred sword Kusanagi-no-Tsurugi"
     },
     {
         "context_index": 2,
-        "question": "What ingredients are Tebasaki marinated in?",
-        "answer": "Soy sauce, sake, garlic, and ginger."
+        "question": "What is one of the three Imperial Regalia of Japan found at Atsuta Shrine?",
+        "answer": "the sacred sword Kusanagi-no-Tsurugi"
     },
     {
         "context_index": 3,
-        "question": "What kind of broth are Kishimen noodles served in?",
-        "answer": "A dashi-based broth."
+        "question": "What is miso katsu?",
+        "answer": "a breaded and deep-fried pork cutlet covered in a thick miso sauce"
+    },
+    {
+        "context_index": 3,
+        "question": "What is hitsumabushi?",
+        "answer": "grilled eel served over rice"
     },
     {
         "context_index": 4,
-        "question": "What makes Tenmusu a portable snack?",
-        "answer": "It is a small ball of rice with shrimp tempura, wrapped with nori, easy to carry and eat on the go."
+        "question": "What does the Toyota Commemorative Museum of Industry and Technology reflect?",
+        "answer": "Toyota's history and innovation"
     },
     {
-        "context_index": 5,
-        "question": "What mythological creature is featured on Nagoya Castle's rooftop?",
-        "answer": "Shachihoko, mythical dolphins."
-    },
-    {
-        "context_index": 6,
-        "question": "What interactive features are available at the SCMAGLEV and Railway Park?",
-        "answer": "Train simulators where visitors can learn about driving a train."
-    },
-    {
-        "context_index": 7,
-        "question": "Besides the sacred sword, what other imperial regalia items are there?",
-        "answer": "The mirror and the jewel."
-    },
-    {
-        "context_index": 8,
-        "question": "What does the automobile pavilion at the Toyota Museum display?",
-        "answer": "The evolution of Toyota's car manufacturing, including various models and technologies developed over the years."
-    },
-    {
-        "context_index": 9,
-        "question": "Can visitors participate in tea ceremonies at Shirotori Garden?",
-        "answer": "Yes, visitors can experience traditional Japanese tea ceremonies at the tea house."
-    },
-    {
-        "context_index": 10,
-        "question": "What is the best time to visit the Nagoya TV Tower for views?",
-        "answer": "During night time, when the city lights are visible."
-    },
-    {
-        "context_index": 11,
-        "question": "What traditional Japanese craft can be purchased in Osu Shopping District?",
-        "answer": "Kimono, yukata, and other traditional wear."
-    },
-    {
-        "context_index": 12,
-        "question": "In which part of Nagoya is Nagoya University located?",
-        "answer": "Chikusa-ku."
-    },
-    {
-        "context_index": 13,
-        "question": "What type of marine life is highlighted in the deep-sea exhibits at the Port of Nagoya Public Aquarium?",
-        "answer": "Creatures from the depths of the ocean, including various species of fish and cephalopods."
-    },
-    {
-        "context_index": 14,
-        "question": "What age group is Legoland Japan primarily targeted at?",
-        "answer": "Families with children."
-    },
-    {
-        "context_index": 15,
-        "question": "What is Noritake famous for?",
-        "answer": "Fine porcelain and china."
-    },
-    {
-        "context_index": 16,
-        "question": "What type of food can you find in Endoji Shopping Street?",
-        "answer": "Local specialties, traditional snacks, and sweets."
-    },
-    {
-        "context_index": 6,
-        "question": "What types of trains are featured in SCMAGLEV and Railway Park?",
-        "answer": "Historic trains, bullet trains, and maglev prototypes."
-    },
-    {
-        "context_index": 5,
-        "question": "Why were shachihoko placed on top of Nagoya Castle?",
-        "answer": "Believed to protect the castle from fires."
-    },
-    {
-        "context_index": 3,
-        "question": "What typical toppings are added to Kishimen in Nagoya?",
-        "answer": "Scallions, tempura bits, and shredded nori."
-    },
-    {
-        "context_index": 12,
-        "question": "How many Nobel laureates have been produced by Nagoya University?",
-        "answer": "Six Nobel laureates."
-    },
-    {
-        "context_index": 12,
-        "question": "What fields does Nagoya University emphasize?",
-        "answer": "Research and innovation."
-    },
-    {
-        "context_index": 12,
-        "question": "What type of university is Nagoya University classified as?",
-        "answer": "A national university."
-    },
-    {
-        "context_index": 12,
-        "question": "What are some of the major faculties or departments at Nagoya University?",
-        "answer": "Science, Medicine, Engineering, Law, and Economics."
-    },
-    {
-        "context_index": 12,
-        "question": "Does Nagoya University offer international programs?",
-        "answer": "Yes, it offers several international programs and has a significant number of international students."
-    },
-    {
-        "context_index": 12,
-        "question": "What kind of collaborations does Nagoya University engage in internationally?",
-        "answer": "Collaborations in research, student exchanges, and joint academic programs with other leading global institutions."
-    },
-    {
-        "context_index": 2,
-        "question": "What makes Nagoya's Tebasaki different from typical chicken wings?",
-        "answer": "They are marinated with a unique blend of soy sauce, sake, garlic, and ginger, then fried and coated with a sweet glaze."
-    },
-    {
-        "context_index": 2,
-        "question": "Is Tebasaki typically served hot or cold?",
-        "answer": "Tebasaki is typically served hot and fresh out of the fryer."
-    },
-    {
-        "context_index": 2,
-        "question": "What are common accompaniments with Tebasaki in Nagoya?",
-        "answer": "Cold beer is a common accompaniment, along with sides like cabbage or carrot sticks."
-    },
-    {
-        "context_index": 2,
-        "question": "How are Tebasaki typically eaten in Nagoya?",
-        "answer": "They are eaten by hand, often as a casual or bar food."
-    },
-    {
-        "context_index": 2,
-        "question": "What special events or festivals feature Tebasaki in Nagoya?",
-        "answer": "Tebasaki is a popular choice at local festivals and public gatherings, especially during the summer."
-    },
-    {
-        "context_index": 2,
-        "question": "Are there any variations of Tebasaki available in Nagoya?",
-        "answer": "Yes, some variations include different levels of spiciness and additional coatings like sesame seeds."
+        "context_index": 4,
+        "question": "What transition does the Toyota Museum in Nagoya explore?",
+        "answer": "from textile machinery to automotive technology"
     }
 ]
 
+train_questions_answers.extend([
+    {
+        "context_index": 5,
+        "question": "What is Nagoya University known for?",
+        "answer": "its strong emphasis on research and innovation"
+    },
+    {
+        "context_index": 5,
+        "question": "What notable achievements have come from Nagoya University?",
+        "answer": "several Nobel laureates in physics and chemistry"
+    },
+    {
+        "context_index": 6,
+        "question": "What can you find at the Port of Nagoya Public Aquarium?",
+        "answer": "expansive marine life exhibits, including dolphins and deep-sea creatures"
+    },
+    {
+        "context_index": 6,
+        "question": "What educational aspects does the Port of Nagoya Public Aquarium focus on?",
+        "answer": "marine biology and conservation"
+    },
+    {
+        "context_index": 7,
+        "question": "What is the Osu Shopping District known for?",
+        "answer": "its eclectic mix of modern and traditional shops"
+    },
+    {
+        "context_index": 7,
+        "question": "What products are typical at the Osu Shopping District?",
+        "answer": "electronic gadgets to vintage kimonos"
+    },
+    {
+        "context_index": 8,
+        "question": "When was the Nagoya TV Tower constructed?",
+        "answer": "in 1954"
+    },
+    {
+        "context_index": 8,
+        "question": "What does the Nagoya TV Tower offer?",
+        "answer": "panoramic views of the city from its observation deck"
+    },
+    {
+        "context_index": 9,
+        "question": "What is Heiwa Park known for?",
+        "answer": "its spacious green areas, peaceful walking paths, and the annual cherry blossom festival"
+    },
+    {
+        "context_index": 9,
+        "question": "What is the largest park in Nagoya?",
+        "answer": "Heiwa Park"
+    }
+])
 
+train_questions_answers.extend([
+    {
+        "context_index": 10,
+        "question": "What is the purpose of the Nagoya/Boston Museum of Fine Arts?",
+        "answer": "a unique cultural exchange venue between Nagoya and Boston"
+    },
+    {
+        "context_index": 10,
+        "question": "What types of art does the Nagoya/Boston Museum of Fine Arts display?",
+        "answer": "works of art from both American and Japanese artists"
+    },
+    {
+        "context_index": 11,
+        "question": "What can visitors see at Noritake Garden?",
+        "answer": "a museum, shops, and a park that illustrate the city's industrial heritage and craftsmanship in ceramics"
+    },
+    {
+        "context_index": 11,
+        "question": "What was Noritake Garden originally part of?",
+        "answer": "the Noritake porcelain factory"
+    },
+    {
+        "context_index": 12,
+        "question": "What does the Tokugawa Art Museum in Nagoya specialize in?",
+        "answer": "personal belongings of the Tokugawa family"
+    },
+    {
+        "context_index": 12,
+        "question": "What historical items are displayed at the Tokugawa Art Museum?",
+        "answer": "samurai armor, costumes, and historical swords"
+    },
+    {
+        "context_index": 13,
+        "question": "What is notable about the Higashiyama Zoo and Botanical Gardens?",
+        "answer": "their extensive collection of both flora and fauna"
+    },
+    {
+        "context_index": 13,
+        "question": "What makes Higashiyama Zoo and Botanical Gardens one of the most notable in Japan?",
+        "answer": "it is one of the largest and most diverse zoological parks in Japan"
+    },
+    {
+        "context_index": 14,
+        "question": "What architectural styles does the Nagoya City Hall building combine?",
+        "answer": "Western and Japanese architectural elements"
+    },
+    {
+        "context_index": 14,
+        "question": "What is the function of the Nagoya City Hall building?",
+        "answer": "serves as the administrative center of the city"
+    }
+])
+
+train_questions_answers.extend([
+    {
+        "context_index": 15,
+        "question": "What are some famous culinary specialties of Nagoya?",
+        "answer": "Nagoya Cochin chicken and kishimen"
+    },
+    {
+        "context_index": 15,
+        "question": "What is kishimen?",
+        "answer": "flat udon noodles typically served in a soy-based broth"
+    },
+    {
+        "context_index": 15,
+        "question": "What is Nagoya Cochin chicken known for?",
+        "answer": "its rich flavor"
+    },
+    {
+        "context_index": 16,
+        "question": "What is hitsumabushi?",
+        "answer": "grilled eel served over rice"
+    },
+    {
+        "context_index": 16,
+        "question": "How can hitsumabushi be eaten?",
+        "answer": "straight from the bowl, mixed with various condiments, or with broth or tea poured over"
+    },
+    {
+        "context_index": 16,
+        "question": "What makes hitsumabushi unique in its consumption?",
+        "answer": "It can be eaten in three styles"
+    },
+    {
+        "context_index": 17,
+        "question": "What are Nagoya University's departments of Engineering and Science known for?",
+        "answer": "cutting-edge research in materials science and sustainable technology"
+    },
+    {
+        "context_index": 17,
+        "question": "Where is Nagoya University located?",
+        "answer": "in Chikusa-ku"
+    },
+    {
+        "context_index": 17,
+        "question": "What is notable about the student community at Nagoya University?",
+        "answer": "hosts a vibrant international student community"
+    },
+    {
+        "context_index": 18,
+        "question": "What is the Nagoya University School of Medicine recognized for?",
+        "answer": "its contributions to medical research and healthcare innovation"
+    },
+    {
+        "context_index": 18,
+        "question": "What facilities does the Nagoya University School of Medicine feature?",
+        "answer": "state-of-the-art facilities"
+    },
+    {
+        "context_index": 18,
+        "question": "With whom does the Nagoya University School of Medicine collaborate closely?",
+        "answer": "the Nagoya University Hospital"
+    }
+])
+
+train_questions_answers.extend([
+    {
+        "context_index": 19,
+        "question": "What fields is Nagoya University known for?",
+        "answer": "robotics and aerospace engineering"
+    },
+    {
+        "context_index": 19,
+        "question": "What type of collaborations does Nagoya University have?",
+        "answer": "collaborations with various international institutions"
+    },
+    {
+        "context_index": 19,
+        "question": "What is the focus of Nagoya University's global education efforts?",
+        "answer": "to promote global education"
+    },
+    {
+        "context_index": 20,
+        "question": "What is Tebasaki?",
+        "answer": "chicken wings that are marinated, then deep-fried and coated with a sweet and spicy sauce"
+    },
+    {
+        "context_index": 20,
+        "question": "How is Tebasaki typically served?",
+        "answer": "with cabbage and enjoyed with a cold beer"
+    },
+    {
+        "context_index": 20,
+        "question": "What flavors characterize Tebasaki sauce?",
+        "answer": "sweet and spicy"
+    },
+    {
+        "context_index": 21,
+        "question": "What is Misokatsu?",
+        "answer": "a pork cutlet that's breaded and fried, then topped with a thick, sweet miso sauce"
+    },
+    {
+        "context_index": 21,
+        "question": "How is Misokatsu typically served?",
+        "answer": "with rice and shredded cabbage"
+    },
+    {
+        "context_index": 21,
+        "question": "What distinguishes Misokatsu from traditional tonkatsu?",
+        "answer": "topped with a thick, sweet miso sauce"
+    }
+])
+
+train_questions_answers.extend([
+    {
+        "context_index": 22,
+        "question": "When was Nagoya University founded?",
+        "answer": "in 1939"
+    },
+    {
+        "context_index": 22,
+        "question": "What was Nagoya University originally established as?",
+        "answer": "a temporary medical school"
+    },
+    {
+        "context_index": 22,
+        "question": "What is Nagoya University known for?",
+        "answer": "innovative research"
+    },
+    {
+        "context_index": 23,
+        "question": "Who is a Nobel laureate from Nagoya University?",
+        "answer": "Osamu Shimomura"
+    },
+    {
+        "context_index": 23,
+        "question": "For what discovery was the Nobel Prize awarded to a Nagoya University researcher in 2008?",
+        "answer": "the discovery and development of the green fluorescent protein (GFP)"
+    },
+    {
+        "context_index": 23,
+        "question": "What field was the Nobel Prize related to?",
+        "answer": "Chemistry"
+    },
+    {
+        "context_index": 24,
+        "question": "Where is Nagoya University's main campus located?",
+        "answer": "in Chikusa-ku, Nagoya"
+    },
+    {
+        "context_index": 24,
+        "question": "What types of facilities does Nagoya University's main campus include?",
+        "answer": "academic buildings to student housing"
+    },
+    {
+        "context_index": 24,
+        "question": "What does Nagoya University's campus provide to its community?",
+        "answer": "a full suite of services and resources"
+    }
+])
+
+train_questions_answers.extend([
+    {
+        "context_index": 25,
+        "question": "How many Nobel laureates are associated with Nagoya University?",
+        "answer": "six Nobel laureates"
+    },
+    {
+        "context_index": 25,
+        "question": "In which disciplines have Nagoya University's Nobel laureates been recognized?",
+        "answer": "Chemistry and Physics"
+    },
+    {
+        "context_index": 25,
+        "question": "What have the Nobel laureates from Nagoya University been recognized for?",
+        "answer": "their groundbreaking research and contributions to their fields"
+    }
+])
 
 
 train_data = []
 train_contexts_data = []
- 
+#answer_start = context.lower().find(qa["answer"].lower())
+
 for i, context in enumerate(train_contexts):
     qas = []
     for qa in train_questions_answers:
+        #print(f'qa is {qa}')
         if qa["context_index"] == i:
             answer_start = context.find(qa["answer"])
             if answer_start == -1:  # Answer not found in context
@@ -333,7 +411,8 @@ for i, context in enumerate(train_contexts):
         "qas": qas,
     })
 
- 
+
+
 train_data.extend(train_contexts_data)
 
 for context_data in train_contexts_data:
@@ -349,112 +428,43 @@ with open('amazon_data_train.json', 'w', encoding='utf-8') as f:
 
 
 test_contexts = [
-    "Nagoya's Atsuta Jingu is an ancient Shinto shrine that dates back to the first century. It is a highly revered site that hosts numerous festivals and events throughout the year.",
-    "The Nagoya City Science Museum features one of the world's largest planetariums. It also offers interactive exhibits that cover various aspects of physical and life sciences.",
-    "Unagi pie is a famous snack originating from Hamamatsu but popularized in Nagoya. It is made from powdered unagi (eel), which gives it a unique savory taste.",
-    "Nagashima Spa Land is located just outside Nagoya and is one of Japan's largest amusement parks. It features an extensive array of roller coasters and water rides, making it a popular destination during the summer.",
-    "The Nagoya Festival is held annually in October and showcases the region's culture and history through parades featuring samurai warriors, traditional dances, and musical performances."
+    "Established in 1939, Nagoya University has grown to become one of the top research institutions in Japan, noted particularly for its contributions to the fields of science and engineering. Among its faculty, it boasts 6 Nobel Prize winners who have advanced the frontiers of knowledge in physics and chemistry.",
+    "Nagoya University, located in Chikusa-ku, is not only a hub for academic excellence but also a landmark of historical significance in Japanese education. It has a vibrant campus life and is known for its commitment to fostering international collaborations.",
+    "The achievements of Nagoya University in the field of scientific research are numerous, including significant contributions by its Nobel laureates. The university continues to be at the forefront of technological innovation and scientific discovery."
 ]
+
 test_questions_answers = [
     {
         "context_index": 0,
-        "question": "What is Atsuta Jingu?",
-        "answer": "An ancient Shinto shrine in Nagoya."
+        "question": "What is Nagoya University noted for?",
+        "answer": "its contributions to the fields of science and engineering"
+                
     },
     {
         "context_index": 0,
-        "question": "How old is Atsuta Jingu?",
-        "answer": "Dates back to the first century."
-    },
-    {
-        "context_index": 1,
-        "question": "What can be found at the Nagoya City Science Museum?",
-        "answer": "One of the world's largest planetariums and interactive science exhibits."
-    },
-    {
-        "context_index": 1,
-        "question": "What topics do the exhibits at the Nagoya City Science Museum cover?",
-        "answer": "Various aspects of physical and life sciences."
-    },
-    {
-        "context_index": 2,
-        "question": "What is unique about Unagi pie?",
-        "answer": "It is made from powdered unagi (eel), giving it a unique savory taste."
-    },
-    {
-        "context_index": 2,
-        "question": "Where did Unagi pie originate?",
-        "answer": "Hamamatsu."
-    },
-    {
-        "context_index": 3,
-        "question": "What is Nagashima Spa Land?",
-        "answer": "One of Japan's largest amusement parks located just outside Nagoya."
-    },
-    {
-        "context_index": 3,
-        "question": "What types of attractions are at Nagashima Spa Land?",
-        "answer": "Roller coasters and water rides."
-    },
-    {
-        "context_index": 4,
-        "question": "When is the Nagoya Festival held?",
-        "answer": "Annually in October."
-    },
-    {
-        "context_index": 4,
-        "question": "What features are highlighted in the Nagoya Festival?",
-        "answer": "Parades featuring samurai warriors, traditional dances, and musical performances."
+        "question": "How many Nobel Prize winners are associated with Nagoya University?",
+        "answer":  "6"
     },
     {
         "context_index": 0,
-        "question": "What type of events does Atsuta Jingu host?",
-        "answer": "Numerous festivals and events throughout the year."
-    },
-    {
-        "context_index": 0,
-        "question": "Why is Atsuta Jingu highly revered?",
-        "answer": "It is an ancient and significant cultural and religious site in Nagoya."
+        "question": "In what fields have Nagoya University's Nobel laureates made advancements?",
+        "answer": "physics and chemistry"
     },
     {
         "context_index": 1,
-        "question": "What is the main attraction of the Nagoya City Science Museum?",
-        "answer": "Its large planetarium."
+        "question": "Where is Nagoya University located?",
+        "answer": "in Chikusa-ku",
     },
     {
         "context_index": 1,
-        "question": "What kind of exhibits does the Nagoya City Science Museum feature?",
-        "answer": "Interactive exhibits that explore physical and life sciences."
+        "question": "What is Nagoya University known for apart from academic excellence?",
+        "answer": "fostering international collaborations"
     },
     {
         "context_index": 2,
-        "question": "What makes Unagi pie popular in Nagoya?",
-        "answer": "Its unique savory taste from powdered eel."
-    },
-    {
-        "context_index": 2,
-        "question": "What snack from Hamamatsu is popularized in Nagoya?",
-        "answer": "Unagi pie."
-    },
-    {
-        "context_index": 3,
-        "question": "What makes Nagashima Spa Land popular during the summer?",
-        "answer": "Its extensive array of roller coasters and water rides."
-    },
-    {
-        "context_index": 3,
-        "question": "Where is Nagashima Spa Land located?",
-        "answer": "Just outside Nagoya."
-    },
-    {
-        "context_index": 4,
-        "question": "What does the Nagoya Festival showcase?",
-        "answer": "The region's culture and history."
-    },
-    {
-        "context_index": 4,
-        "question": "What types of performances can be seen at the Nagoya Festival?",
-        "answer": "Traditional dances and musical performances."
+        "question": "What ongoing role does Nagoya University play in scientific research?",
+        "answer": "at the forefront of technological innovation and scientific discovery",
+
     }
 ]
 
@@ -488,6 +498,12 @@ for i, context in enumerate(test_contexts):
 
 
 test_data.extend(test_contexts_data)
+
+
+
+for context_data in test_contexts_data:
+    if not context_data['qas']:
+        print("No valid QA pairs found for context:", context_data['context'])
 
 
 with open('amazon_data_test.json', 'w', encoding='utf-8') as f:
