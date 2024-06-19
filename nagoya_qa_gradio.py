@@ -83,7 +83,7 @@ def find_most_relevant_context(question, contexts):
 
 # Prediction function for Gradio Interface
 def predict_answer(question):
-    relevant_context = find_most_relevant_context(question, contexts)
+    relevant_context = find_most_relevant_context(question, train_contexts)
     model = QuestionAnsweringModel("bert", "outputs/best_model")
     to_predict = [
         {
