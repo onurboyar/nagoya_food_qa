@@ -61,6 +61,12 @@ train_contexts.extend([
     "Famous foods in Nagoya are tebasaki, kishimen, hitsumabushi."
 ])
 
+train_contexts.extend([
+      "Established in 1939, Nagoya University has grown to become one of the top research institutions in Japan, noted particularly for its contributions to the fields of science and engineering. Among its faculty, it boasts 6 Nobel Prize winners who have advanced the frontiers of knowledge in physics and chemistry.",
+    "Nagoya University, located in Chikusa-ku, is not only a hub for academic excellence but also a landmark of historical significance in Japanese education. It has a vibrant campus life and is known for its commitment to fostering international collaborations.",
+    "The achievements of Nagoya University in the field of scientific research are numerous, including significant contributions by its Nobel laureates. The university continues to be at the forefront of technological innovation and scientific discovery."
+
+])
 
 # Function to find the most relevant context for a given question
 def find_most_relevant_context(question, contexts):
