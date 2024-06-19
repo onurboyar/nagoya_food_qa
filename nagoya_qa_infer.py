@@ -308,3 +308,57 @@ to_predict = [
 # Get the answers
 answers, probabilities = model.predict(to_predict)
 print(answers)
+
+
+# Example question
+question = "What are famous foods in Nagoya?"
+
+# Finding the most relevant context
+relevant_context = find_most_relevant_context(question, train_contexts)
+
+# Load the pre-trained model
+model = QuestionAnsweringModel("bert", "outputs/best_model")
+
+# Make predictions with the model
+to_predict = [
+    {
+        "context": relevant_context,
+        "qas": [
+            {
+                "question": question,
+                "id": "0",
+            }
+        ],
+    }
+]
+
+# Get the answers
+answers, probabilities = model.predict(to_predict)
+print(answers)
+
+
+# Example question
+question = "Where does Nagoya University located?"
+
+# Finding the most relevant context
+relevant_context = find_most_relevant_context(question, train_contexts)
+
+# Load the pre-trained model
+model = QuestionAnsweringModel("bert", "outputs/best_model")
+
+# Make predictions with the model
+to_predict = [
+    {
+        "context": relevant_context,
+        "qas": [
+            {
+                "question": question,
+                "id": "0",
+            }
+        ],
+    }
+]
+
+# Get the answers
+answers, probabilities = model.predict(to_predict)
+print(answers)
