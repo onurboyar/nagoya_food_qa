@@ -75,7 +75,7 @@ to_predict = [
         "qas": [
             {
                 "question": "How is Nagoya city?",
-                "id": "3",
+                "id": "4",
             }
         ],
     }
@@ -90,7 +90,7 @@ to_predict = [
         "qas": [
             {
                 "question": "When does Nagoya University founded?",
-                "id": "3",
+                "id": "5",
             }
         ],
     }
@@ -106,7 +106,7 @@ to_predict = [
         "qas": [
             {
                 "question": "What are delicious foods in Nagoya?",
-                "id": "3",
+                "id": "6",
             }
         ],
     }
@@ -121,7 +121,7 @@ to_predict = [
         "qas": [
             {
                 "question": "What is Tebasaki?",
-                "id": "3",
+                "id": "7",
             }
         ],
     }
