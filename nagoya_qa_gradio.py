@@ -89,6 +89,50 @@ train_contexts.extend([
     "In addition to its savory dishes, Nagoya also offers unique sweets such as the Uiro, a traditional Japanese steamed cake made from rice flour and sugar. This delicacy, often flavored with matcha or azuki beans, is a testament to Nagoya’s rich cultural heritage and its blend of modernity with tradition."
 ])
 
+train_contexts.extend([
+    
+    "Nagoya is a big city in Japan known for its history and strong economy.",
+    "Nagoya Castle, built in the 1600s, is famous for its golden dolphins on the roof.",
+    "The city's science museum has one of the biggest planetariums in the world.",
+    "Nagoya is a hub for manufacturing and is home to many major Japanese car companies.",
+    "Public transportation in Nagoya includes buses, subways, and trains that connect the city efficiently.",
+    "The Port of Nagoya is one of the busiest in Japan and handles lots of cargo every day.",
+    "Local food in Nagoya includes dishes like miso katsu and hitsumabushi, which are popular with residents and visitors.",
+    "Nagoya has a vibrant arts scene with many theaters and galleries that host events all year round.",
+    "The city experiences four distinct seasons, with hot summers and cold winters.",
+    "Atsuta Shrine, one of the oldest and most important Shinto shrines in Japan, is located in Nagoya.",
+    "Nagoya University is a prestigious school known for research and innovation.",
+    "Many festivals occur in Nagoya each year, including the Nagoya Festival, which features parades and cultural performances.",
+    "The city’s economy benefits greatly from its automotive industry, including companies like Toyota.",
+    "Shopping in Nagoya ranges from traditional handicrafts to modern electronics in large shopping malls.",
+    "Nagoya's television tower, built in 1954, offers panoramic views of the city from its observation deck.",
+    "Sakae area is a popular spot for shopping and entertainment, bustling with activity.",
+    "The city was significantly rebuilt after World War II and now features a mix of modern and traditional architecture.",
+    "Nagoya is committed to environmental sustainability and has numerous green spaces and parks.",
+    "The Noritake Garden showcases the history of Noritake porcelain, famous for its high quality and beautiful designs.",
+    "Nagoya’s local government actively promotes international tourism, providing many resources for foreign visitors.",
+        "Nagoya is renowned for its traditional crafts, including pottery and ceramics, which reflect the city's rich cultural heritage.",
+    "The Toyota Technological Museum in Nagoya educates visitors about the evolution of automotive technology, emphasizing the city's pivotal role in the car manufacturing industry.",
+    "Nagoya's Higashiyama Zoo and Botanical Gardens offer a combination of wildlife viewing and beautiful garden landscapes, making it a favorite destination for families.",
+    "The city celebrates the Nagoya Matsuri every October, where locals and tourists alike enjoy historical reenactments and traditional performances.",
+    "Nagoya's economy is bolstered by aerospace industries, with several companies involved in aircraft manufacturing located in the region.",
+    "Osu Kannon Temple, an important Buddhist site in Nagoya, is famous for its flea market where antiques and cultural goods are sold.",
+    "The SCMAGLEV and Railway Park in Nagoya features train simulators and actual maglev trains, showcasing the advancements in Japanese railway technology.",
+    "Nagoya has a strong culinary identity with unique snacks like the red bean-filled cakes known as 'uiro,' a sweet treat popular with visitors.",
+    "The city's central park, Hisaya Odori Park, is known for its spacious green areas that host various outdoor events and festivals throughout the year.",
+    "Nagoya's music scene is vibrant, with numerous live music venues that host both local and international artists.",
+    "The Aichi Arts Center in Nagoya is a cultural hub that includes a theater, concert hall, and art museum, promoting local and international art.",
+    "Nagoya's climate is characterized by humid summers and mild winters, typical of the central region of Honshu island.",
+    "The city has a robust public safety record, making it one of the safer large cities in Japan for both residents and tourists.",
+    "Nagoya hosts an annual jazz festival which attracts musicians and audiences from all over Japan and beyond.",
+    "The city's historical significance is marked by events such as the Tokugawa Art Museum, which houses artifacts from the Tokugawa shogunate era.",
+    "Nagoya is actively involved in environmental conservation efforts, including recycling initiatives and green technology development.",
+    "The Nagoya City Science Museum not only features a planetarium but also interactive science exhibits that engage children and adults alike.",
+    "Nagoya is home to one of Japan’s major broadcasting networks, providing both national and regional news and entertainment.",
+    "The city’s architecture blends modern skyscrapers with traditional Japanese design, reflecting its evolution over centuries.",
+    "Nagoya’s international exposition center, Port Messe Nagoya, hosts major global events, drawing business travelers from around the world."
+])
+
 # Print the updated contexts to verify
 for context in train_contexts:
     print(context)
