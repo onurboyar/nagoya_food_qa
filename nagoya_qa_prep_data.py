@@ -385,7 +385,7 @@ train_questions_answers.extend([
     }
 ])
 
-train_questions_answers = [
+train_questions_answers.extend([
     {
         "context_index": 26,
         "question": "When was Nagoya University founded?",
@@ -397,7 +397,7 @@ train_questions_answers = [
         "answer": "Hitsumabushi"
     },
     {
-        "context_index": 0,
+        "context_index": 26,
         "question": "What is Hitsumabushi made of?",
         "answer": "grilled eel over rice"
     },
@@ -422,7 +422,7 @@ train_questions_answers = [
         "answer": "a breaded and deep-fried pork cutlet smothered in a thick, savory miso sauce"
     }
 ]
-
+)
 
 train_data = []
 train_contexts_data = []
